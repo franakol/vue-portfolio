@@ -44,7 +44,7 @@ export default {
           id: 1,
           title: 'E-Commerce Platform',
           description: 'A full-featured e-commerce platform built with Vue.js and Node.js, featuring shopping cart, user authentication, and payment integration.',
-          image: 'https://source.unsplash.com/300x200/?ecommerce,shop',
+          image: 'https://picsum.photos/id/1/300/200',
           technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe'],
           github: 'https://github.com',
           demo: 'https://demo-link.com'
@@ -53,7 +53,7 @@ export default {
           id: 2,
           title: 'Task Management App',
           description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-          image: 'https://source.unsplash.com/300x200/?task,management',
+          image: 'https://picsum.photos/id/48/300/200',
           technologies: ['Vue.js', 'Firebase', 'Vuex', 'Socket.io'],
           github: 'https://github.com',
           demo: 'https://demo-link.com'
@@ -62,7 +62,7 @@ export default {
           id: 3,
           title: 'Weather Dashboard',
           description: 'A weather forecasting application that provides real-time weather data, interactive maps, and detailed weather information.',
-          image: 'https://source.unsplash.com/300x200/?weather,cloud',
+          image: 'https://picsum.photos/id/29/300/200',
           technologies: ['Vue.js', 'OpenWeather API', 'Chart.js', 'Leaflet'],
           github: 'https://github.com',
           demo: 'https://demo-link.com'
