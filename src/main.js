@@ -36,7 +36,9 @@ import {
   faSync,
   faHeading,
   faComment,
-  faPaperPlane
+  faPaperPlane,
+  faSun,
+  faMoon
 } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -76,7 +78,9 @@ library.add(
   faSync,
   faHeading,
   faComment,
-  faPaperPlane
+  faPaperPlane,
+  faSun,
+  faMoon
 );
 
 const app = createApp(App);

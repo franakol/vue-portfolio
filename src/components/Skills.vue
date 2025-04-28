@@ -55,9 +55,8 @@
 <script>
 export default {
   name: 'Skills',
-  components: {
-    FontAwesomeIcon: () => import('@fortawesome/vue-fontawesome').then(m => m.FontAwesomeIcon)
-  },
+  // FontAwesomeIcon is registered globally in main.js
+  components: {},
   data() {
     return {
       frontendSkills: [

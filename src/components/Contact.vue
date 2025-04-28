@@ -20,7 +20,7 @@
           </div>
           <div class="contact-item">
             <font-awesome-icon icon="map-marker-alt" />
-            <span>New York, NY</span>
+            <span>Kigali, Rwanda</span>
           </div>
         </div>
 
@@ -102,9 +102,8 @@
 <script>
 export default {
   name: 'Contact',
-  components: {
-    FontAwesomeIcon: () => import('@fortawesome/vue-fontawesome').then(m => m.FontAwesomeIcon)
-  },
+  // FontAwesomeIcon is registered globally in main.js
+  components: {},
   data() {
     return {
       form: {

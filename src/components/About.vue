@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="profile-section" data-aos="fade-down">
-      <img src="@/assets/images/profile.jpg" alt="Profile Image" class="profile-image" />
+      <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light" alt="Profile Image" class="profile-image" />
       <h1><font-awesome-icon icon="user" /> About Me</h1>
     </div>
     
@@ -66,9 +66,8 @@
 <script>
 export default {
   name: 'About',
-  components: {
-    FontAwesomeIcon: () => import('@fortawesome/vue-fontawesome').then(m => m.FontAwesomeIcon)
-  }
+  // FontAwesomeIcon is registered globally in main.js
+  components: {}
 }
 </script>
 

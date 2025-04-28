@@ -27,9 +27,8 @@
 <script>
 export default {
   name: 'Header',
-  components: {
-    FontAwesomeIcon: () => import('@fortawesome/vue-fontawesome').then(m => m.FontAwesomeIcon)
-  },
+  // FontAwesomeIcon is registered globally in main.js
+  components: {},
   data() {
     return {
       isMenuOpen: false

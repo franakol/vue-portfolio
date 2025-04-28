@@ -4,22 +4,26 @@
     <main>
       <router-view />
     </main>
+    <ThemeToggle />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import ThemeToggle from './components/ThemeToggle.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    ThemeToggle
   }
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import './assets/css/theme.css';
 
 * {
   margin: 0;
