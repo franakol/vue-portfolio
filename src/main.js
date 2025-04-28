@@ -3,7 +3,18 @@ import App from './App.vue';
 import router from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { 
+  faGithub, 
+  faLinkedin, 
+  faTwitter, 
+  faHtml5, 
+  faJs, 
+  faVuejs, 
+  faReact, 
+  faNodeJs, 
+  faDocker, 
+  faGitAlt 
+} from '@fortawesome/free-brands-svg-icons';
 import { 
   faCode, 
   faEnvelope, 
@@ -13,16 +24,38 @@ import {
   faGraduationCap,
   faPhone,
   faMapMarkerAlt,
-  faCheckCircle
+  faCheckCircle,
+  faLaptopCode,
+  faServer,
+  faTools,
+  faMobileAlt,
+  faDatabase,
+  faExchangeAlt,
+  faCogs,
+  faVial,
+  faSync,
+  faHeading,
+  faComment,
+  faPaperPlane
 } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Add Font Awesome icons
 library.add(
+  // Brand icons
   faGithub, 
   faLinkedin,
   faTwitter,
+  faHtml5,
+  faJs,
+  faVuejs,
+  faReact,
+  faNodeJs,
+  faDocker,
+  faGitAlt,
+  
+  // Solid icons
   faCode, 
   faEnvelope, 
   faUser, 
@@ -31,7 +64,19 @@ library.add(
   faGraduationCap,
   faPhone,
   faMapMarkerAlt,
-  faCheckCircle
+  faCheckCircle,
+  faLaptopCode,
+  faServer,
+  faTools,
+  faMobileAlt,
+  faDatabase,
+  faExchangeAlt,
+  faCogs,
+  faVial,
+  faSync,
+  faHeading,
+  faComment,
+  faPaperPlane
 );
 
 const app = createApp(App);

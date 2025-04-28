@@ -5,11 +5,11 @@
     </h1>
     <div class="skills-grid">
       <div class="skill-category card" data-aos="fade-right">
-        <h2>Frontend Development</h2>
+        <h2><font-awesome-icon icon="laptop-code" /> Frontend Development</h2>
         <div class="skills-list">
           <div class="skill-item" v-for="skill in frontendSkills" :key="skill.name">
             <div class="skill-header">
-              <strong>{{ skill.name }}</strong>
+              <strong><font-awesome-icon :icon="getSkillIcon(skill.name)" /> {{ skill.name }}</strong>
               <span>{{ skill.level }}%</span>
             </div>
             <div class="progress-bar">
@@ -20,11 +20,11 @@
       </div>
 
       <div class="skill-category card" data-aos="fade-left">
-        <h2>Backend Development</h2>
+        <h2><font-awesome-icon icon="server" /> Backend Development</h2>
         <div class="skills-list">
           <div class="skill-item" v-for="skill in backendSkills" :key="skill.name">
             <div class="skill-header">
-              <strong>{{ skill.name }}</strong>
+              <strong><font-awesome-icon :icon="getSkillIcon(skill.name)" /> {{ skill.name }}</strong>
               <span>{{ skill.level }}%</span>
             </div>
             <div class="progress-bar">
@@ -35,11 +35,11 @@
       </div>
 
       <div class="skill-category card" data-aos="fade-right">
-        <h2>Tools & Technologies</h2>
+        <h2><font-awesome-icon icon="tools" /> Tools & Technologies</h2>
         <div class="skills-list">
           <div class="skill-item" v-for="skill in toolsSkills" :key="skill.name">
             <div class="skill-header">
-              <strong>{{ skill.name }}</strong>
+              <strong><font-awesome-icon :icon="getSkillIcon(skill.name)" /> {{ skill.name }}</strong>
               <span>{{ skill.level }}%</span>
             </div>
             <div class="progress-bar">
@@ -81,6 +81,30 @@ export default {
         { name: 'Jest', level: 70 },
         { name: 'CI/CD', level: 65 }
       ]
+    }
+  },
+  methods: {
+    getSkillIcon(skillName) {
+      const iconMap = {
+        'HTML5/CSS3': 'html5',
+        'JavaScript': 'js',
+        'Vue.js': 'vuejs',
+        'React': 'react',
+        'Responsive Design': 'mobile-alt',
+        'Node.js': 'node-js',
+        'Express': 'server',
+        'MongoDB': 'database',
+        'RESTful APIs': 'exchange-alt',
+        'SQL': 'database',
+        'Git': 'git-alt',
+        'Webpack': 'cogs',
+        'Docker': 'docker',
+        'Jest': 'vial',
+        'CI/CD': 'sync'
+      };
+      
+      // Return a default icon if the skill name is not in the map
+      return iconMap[skillName] || 'code';
     }
   }
 }

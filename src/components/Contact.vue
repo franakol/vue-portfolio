@@ -39,7 +39,7 @@
 
       <form @submit.prevent="submitForm" class="contact-form card" data-aos="fade-left">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name"><font-awesome-icon icon="user" /> Name</label>
           <input 
             type="text" 
             id="name" 
@@ -50,7 +50,7 @@
         </div>
 
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email"><font-awesome-icon icon="envelope" /> Email</label>
           <input 
             type="email" 
             id="email" 
@@ -61,7 +61,7 @@
         </div>
 
         <div class="form-group">
-          <label for="subject">Subject</label>
+          <label for="subject"><font-awesome-icon icon="heading" /> Subject</label>
           <input 
             type="text" 
             id="subject" 
@@ -72,7 +72,7 @@
         </div>
 
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message"><font-awesome-icon icon="comment" /> Message</label>
           <textarea 
             id="message" 
             v-model="form.message" 
@@ -83,7 +83,7 @@
         </div>
 
         <button type="submit" class="submit-btn" :disabled="submitting">
-          <span v-if="!submitting">Send Message</span>
+          <span v-if="!submitting"><font-awesome-icon icon="paper-plane" /> Send Message</span>
           <span v-else>Sending...</span>
         </button>
       </form>
